@@ -6,6 +6,13 @@
  *
  */
 
+function total (arr){
+    let som = 0
+    for (let valeur of arr){
+        som = som + valeur;
+    }
+    return som
+}
 
 //* Begin of tests
 const assert = require('assert')

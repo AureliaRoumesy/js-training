@@ -8,6 +8,16 @@
  */
 
 // Your code:
+const number = ''
+
+function isPositive (number){
+    if (number > 0){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
 
 
 //* Begin of tests
