@@ -11,6 +11,34 @@
 
 // Your code :
 
+let numA = ''
+let numB = ''
+
+function multiply (numA, numB){
+    let absA = Math.abs(numA);
+    let absB = Math.abs(numB);
+    let multi = 0
+    const multiRec = count => {
+      if (count < absB) {
+        multiRec(count + 1) 
+        multi = multi + absA
+      }
+    }
+    multiRec(0)
+    if (numA == 0 || numB == 0 || (numA == 0 && numB == 0)){
+        return (0);
+    }
+    else if (numA < 0 && numB < 0) {
+        return (multi);
+    }
+    else if (numA < 0 || numB < 0) {
+        return (-multi);
+    }
+    else {
+        return (multi)
+    }
+}
+
 //* Begin of tests
 const assert = require('assert')
 
